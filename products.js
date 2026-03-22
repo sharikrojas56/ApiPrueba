@@ -45,7 +45,7 @@ function loadCard(product){
     container.appendChild(card);
 }
 
-// ================= DELETE =================
+// DELETE
 async function deleteByIdProduct(id) {
     const response = await fetch(`http://localhost:3000/products/${id}`,{
         method: "DELETE"
@@ -57,7 +57,7 @@ async function deleteByIdProduct(id) {
     }
 }
 
-// ================= FIND =================
+// FIND 
 async function getFindByIdProduct() {
 
     const idFilter = document.getElementById("idFilter").value;
@@ -75,7 +75,7 @@ async function getFindByIdProduct() {
     loadCard(product);
 }
 
-// ================= LOAD UPDATE =================
+//  LOAD UPDATE 
 function loadProductUpdate(id,title,price,thumbnail){
 
     document.getElementById("idUpdate").value = id;
