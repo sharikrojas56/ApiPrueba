@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     getAllProducts();
 });
 
-// ================= GET ALL =================
+// GET ALL 
 async function getAllProducts() {
     const response = await fetch("http://localhost:3000/products");
     const products = await response.json();
@@ -15,7 +15,7 @@ async function getAllProducts() {
     });
 }
 
-// ================= LOAD CARD =================
+//  LOAD CARD
 function loadCard(product){
 
     const container = document.getElementById("container");
